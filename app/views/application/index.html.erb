@@ -1,0 +1,43 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Rails No Build</a>
+  </div>
+</nav>
+
+<div class="container py-5" data-controller="hello">
+  <h1>Example of using Boostrap without bundling</h1>
+
+  <ul class="list-group py-5">
+    <li class="list-group-item">Using import maps</li>
+    <li class="list-group-item">With Turbo</li>
+    <li class="list-group-item">Stimulus</li>
+  </ul>
+
+
+  <div class="text-center my-3">
+    <button
+      class="btn btn-lg btn-primary px-5 mb-3"
+      data-action="hello#sayHi">
+      SAY HI TO THE WORLD
+    </button>
+
+    <div class="text-secondary">Please see the hello_controller.js to see StimulusJS with Bootstrap in action</div>
+  </div>
+
+  <div class="modal modal-lg" tabindex="-1" data-hello-target="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-primary-subtle">
+          <h1 class="display-1 text-center">HELLO WORLD!</h1>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
