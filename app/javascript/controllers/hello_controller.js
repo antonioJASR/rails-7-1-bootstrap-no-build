@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import { Modal } from "bootstrap"
 
 export default class extends Controller {
   static targets = ['modal'];
@@ -6,7 +7,7 @@ export default class extends Controller {
   }
 
   sayHi() {
-    new bootstrap.Modal(this.modalTarget, {
+    new Modal(this.modalTarget, {
       backdrop: 'static'
     }).show();
   }

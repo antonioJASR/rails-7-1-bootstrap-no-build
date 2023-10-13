@@ -10,7 +10,8 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <%# Set data-bs-theme="dark" to support dark mode %>
+  <body data-bs-theme="">
     <%= yield %>
   </body>
 </html>
