@@ -118,5 +118,8 @@ a {
 .list-group-item {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
-    border-color: rgba(var(--bs-white-rgb), 0.2); /* Using RGB Values as param of the rgba function, cool */
+
+    &[data-bs-theme=dark] {
+        border-color: rgba(var(--bs-white-rgb), 0.2); /* Using RGB Values as param of the rgba function, cool */
+    }
 }
